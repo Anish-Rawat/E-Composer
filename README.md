@@ -8,7 +8,8 @@ Welcome to **E Composer**, a modern web application designed to enhance user exp
 1. [Project Overview](#project-overview)
 2. [Page Features](#page-features)
 3. [Other Features](#other-features)
-4. [Installation](#installation)
+4. [Installation](#installation)Open the files with conflicts, which will be highlighted in the git status output.
+
 5. [Pages](#pages)
 6. [Technologies Used](#technologies-used)
 
