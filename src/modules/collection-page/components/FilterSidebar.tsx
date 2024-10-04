@@ -92,7 +92,7 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({ open, setOpen }) => {
           </AccordionSummary>
           <AccordionDetails>
             <List>
-              {collections.map((collection, index) => (
+              {collections?.map((collection, index) => (
                 <ListItem
                   key={index}
                   component="div"
@@ -143,11 +143,11 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({ open, setOpen }) => {
           </AccordionSummary>
           <AccordionDetails>
             <List>
-              {brands.map((brand) => (
+              {brands?.map((brand) => (
                 <ListItem component="li" key={brand.id}>
                   <FormControlLabel
                     control={<Checkbox />}
-                    label={`${brand.name} (${brand.count})`}
+                    label={`${brand?.name} (${brand?.count})`}
                   />
                 </ListItem>
               ))}
@@ -172,8 +172,8 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({ open, setOpen }) => {
           </AccordionSummary>
           <AccordionDetails>
             <List>
-              {colors.map((color) => (
-                <ListItem component="li" key={color.id}>
+              {colors?.map((color) => (
+                <ListItem component="li" key={color?.id}>
                   <ListItemText
                     primary={
                       <span style={{ display: "flex", alignItems: "center" }}>
@@ -186,7 +186,7 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({ open, setOpen }) => {
                             marginRight: 8,
                           }}
                         />
-                        {color.name} ({color.count})
+                        {color?.name} ({color?.count})
                       </span>
                     }
                   />

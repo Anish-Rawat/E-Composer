@@ -125,7 +125,7 @@ const FilterSortSection: React.FC = () => {
         }}
         
       >
-        {furnitureList.map((product, index) => (
+        {furnitureList?.map((product, index) => (
           <Box key={index} sx={{ width: "100%" }} >
             <ProductCard product={product} />
           </Box>

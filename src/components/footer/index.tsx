@@ -41,7 +41,7 @@ const Footer = () => {
           <Newsletter />
         </Grid>
 
-        {sections.map((section, index) => (
+        {sections?.map((section, index) => (
           <Grid
             key={index}
             item
@@ -50,7 +50,7 @@ const Footer = () => {
             md={2} 
             sx={{ textAlign: { xs: "left", md: "center" } }} 
           >
-            <FooterSection title={section.title} links={section.links} />
+            <FooterSection title={section?.title} links={section?.links} />
           </Grid>
         ))}
       </Grid>

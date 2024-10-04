@@ -7,7 +7,7 @@ type ActionButtonProps = {
   onClick: () => void;
 };
 
-const ActionButton: React.FC<ActionButtonProps> = ({ text, icon, onClick }) => {
+const ActionButton: React.FC<ActionButtonProps> = ({ text="", icon, onClick }) => {
   return (
     <Button
       onClick={onClick}

@@ -6,7 +6,7 @@ type PageHeaderProps = {
   subtitle: string;
 };
 
-const PageHeader: React.FC<PageHeaderProps> = ({ title, subtitle }) => {
+const PageHeader: React.FC<PageHeaderProps> = ({ title="", subtitle="" }) => {
   return (
     <Box
       sx={{

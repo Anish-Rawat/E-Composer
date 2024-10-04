@@ -10,8 +10,8 @@ type HelpCardProps = {
 
 const HelpCard: React.FC<HelpCardProps> = ({
   icon,
-  title,
-  subtitle,
+  title="",
+  subtitle="",
 }) => {
   return (
     <Card

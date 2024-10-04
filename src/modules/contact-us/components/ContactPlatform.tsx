@@ -9,9 +9,9 @@ interface ContactPlatformProps {
 }
 
 const ContactPlatform: React.FC<ContactPlatformProps> = ({
-  label,
-  linkText,
-  href,
+  label="",
+  linkText="",
+  href="",
   icon,
 }) => {
   return (

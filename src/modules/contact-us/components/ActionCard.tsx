@@ -13,9 +13,9 @@ type ActionCardProps = {
 
 const ActionCard: React.FC<ActionCardProps> = ({
   icon,
-  title,
-  subtitle,
-  buttonLabel,
+  title="",
+  subtitle="",
+  buttonLabel="",
   onClick,
 }) => {
   return (

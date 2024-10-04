@@ -52,7 +52,7 @@ const FaqSection = () => {
           data-aos="fade-up"
       data-aos-duration="1000"
         >
-          {faqs.map((faq, index) => (
+          {faqs?.map((faq, index) => (
             <Accordion
               key={index}
               expanded={expanded === `panel${index}`}
@@ -85,11 +85,11 @@ const FaqSection = () => {
                 id={`panel${index}-header`}
               >
                 <Typography variant="h6" fontWeight="bold" color="#737373">
-                  {faq.question}
+                  {faq?.question}
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography>{faq.answer}</Typography>
+                <Typography>{faq?.answer}</Typography>
               </AccordionDetails>
             </Accordion>
           ))}

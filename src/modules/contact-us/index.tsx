@@ -33,8 +33,8 @@ const ContactUs = () => {
         }}
       >
         <PageHeader
-          title={footerPageHeaderMockData.title}
-          subtitle={footerPageHeaderMockData.subtitle}
+          title={footerPageHeaderMockData?.title}
+          subtitle={footerPageHeaderMockData?.subtitle}
         />
         <SearchBar />
       </Box>
@@ -54,13 +54,13 @@ const ContactUs = () => {
           overflowX: "hidden",
         }}
       >
-        {actionCardData.map((section, index) => (
+        {actionCardData?.map((section, index) => (
           <ActionCard
             key={index}
-            icon={section.icon}
-            title={section.title}
-            subtitle={section.subtitle}
-            buttonLabel={section.actionText}
+            icon={section?.icon}
+            title={section?.title}
+            subtitle={section?.subtitle}
+            buttonLabel={section?.actionText}
             onClick={() => {}}
           />
         ))}
@@ -97,7 +97,7 @@ const ContactUs = () => {
           maxWidth="100%"
           overflow="hidden"
         >
-          {helpDeskData.map((item, index) => (
+          {helpDeskData?.map((item, index) => (
             <Box
               key={index}
               flexBasis={{
@@ -110,9 +110,9 @@ const ContactUs = () => {
               maxWidth="100%"
             >
               <HelpCard
-                icon={item.icon}
-                title={item.title}
-                subtitle={item.subtitle}
+                icon={item?.icon}
+                title={item?.title}
+                subtitle={item?.subtitle}
                 onClick={() => {}}
               />
             </Box>
@@ -153,7 +153,7 @@ const ContactUs = () => {
           data-aos-duration="1000"
         >
           <Grid container spacing={3} justifyContent="center">
-            {contactChannels.map((channel, index) => (
+            {contactChannels?.map((channel, index) => (
               <Grid
                 item
                 xs={12}
@@ -179,7 +179,7 @@ const ContactUs = () => {
                     icon={channel.icon}
                   />
 
-                  {index < contactChannels.length - 1 && (
+                  {index < contactChannels?.length - 1 && (
                     <Box
                       sx={{
                         display: { xs: "none", md: "block" },
