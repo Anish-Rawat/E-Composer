@@ -1,4 +1,4 @@
-# 🎶 E Composer
+# 🎶 E Composer : COLLECTION PAGE & CONTACT US 
 
 Welcome to **E Composer**, a modern web application designed to enhance user experience in managing and exploring a curated collection of products. With a visually appealing interface and intuitive navigation, users can easily find and filter items according to their preferences.
 
@@ -45,21 +45,21 @@ Welcome to **E Composer**, a modern web application designed to enhance user exp
 ## 🖥️ Installation & Setup
 
 1. Clone the repository:
-   \`\`\`bash
+   \`\`\`
    git clone https://github.com/your-username/your-repo-name.git
    \`\`\`
 
 2. Install dependencies:
-   \`\`\`bash
+   \`\`\`
    npm install
    \`\`\`
 
 3. Run the development server:
-   \`\`\`bash
+   \`\`\`
    npm run dev
    \`\`\`
 
-4. Open your browser and go to \`http://localhost:3000\` to see the app.
+4. Open your browser and go to \`https://e-composer.vercel.app/\` to see the app.
 
 ## 🌟 Demo
 
