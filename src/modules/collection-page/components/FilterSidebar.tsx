@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
 import {
   Drawer,
   Slider,
@@ -17,6 +18,7 @@ import {
 import CloseIcon from "@mui/icons-material/Close";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { brands, colors, collections } from "../../../utils/mockData";
+import { setPriceRange } from "../../../features/furnitureSlice";
 
 interface FilterSidebarProps {
   open: boolean;
@@ -25,18 +27,24 @@ interface FilterSidebarProps {
 
 const FilterSidebar: React.FC<FilterSidebarProps> = ({ open, setOpen }) => {
   const [expandedPanels, setExpandedPanels] = useState<string[]>([]);
+  const [priceRange, setPriceRangeState] = useState<number[]>([0, 500]); 
+  const dispatch = useDispatch(); 
 
   const toggleDrawer = () => {
     setOpen(!open);
   };
 
-  const handlePriceChange = (
-    event: React.SyntheticEvent | Event,
-    newValue: number | number[]
-  ) => {
-    console.log("Price range:", newValue);
-    console.log(event);
+  const handlePriceChange = (event: React.SyntheticEvent | Event, newValue: number | number[]) => {
+    setPriceRangeState(newValue as number[]); 
   };
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      dispatch(setPriceRange(priceRange)); 
+    }, 300); 
+
+    return () => clearTimeout(timeoutId);
+  }, [priceRange, dispatch]);
 
   const handleAccordionChange = (panel: string) => () => {
     setExpandedPanels((prev) =>
@@ -118,9 +126,9 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({ open, setOpen }) => {
           Price
         </Typography>
         <Slider
-          defaultValue={[0, 1000]}
+          value={priceRange}
           min={0}
-          max={1000}
+          max={500}
           onChange={handlePriceChange}
           valueLabelDisplay="auto"
           sx={{ color: "red" }}
