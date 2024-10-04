@@ -34,7 +34,7 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({ open, setOpen }) => {
     setOpen(!open);
   };
 
-  const handlePriceChange = (event: React.SyntheticEvent | Event, newValue: number | number[]) => {
+  const handlePriceChange = (newValue: number | number[]) => {
     setPriceRangeState(newValue as number[]); 
   };
 
