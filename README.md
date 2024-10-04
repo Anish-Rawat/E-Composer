@@ -42,26 +42,29 @@ Welcome to **E Composer**, a modern web application designed to enhance user exp
 
 ---
 
-## 🛠️ Installation
+## 🖥️ Installation & Setup
 
-To run the E Composer app locally, follow these steps:
+1. Clone the repository:
+   \`\`\`bash
+   git clone https://github.com/your-username/your-repo-name.git
+   \`\`\`
 
-1. **Clone the repository**:
-     ```bash
-     git clone https://github.com/Anish-Rawat/E-Composer
-2. Navigate to the project directory:
+2. Install dependencies:
+   \`\`\`bash
+   npm install
+   \`\`\`
 
-    bash cd EComposer
+3. Run the development server:
+   \`\`\`bash
+   npm run dev
+   \`\`\`
 
-3. Install dependencies:
+4. Open your browser and go to \`http://localhost:3000\` to see the app.
 
-    bash
-    npm install
+## 🌟 Demo
 
-4. Run the application:
+Check out the live demo :- https://e-composer.vercel.app/ 
 
-    bash
-    npm start
 
 📄 Pages
 1. Collection Page
