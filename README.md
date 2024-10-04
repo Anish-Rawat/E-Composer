@@ -71,12 +71,17 @@ Price slider allows users to select a price range (0 to 1000).
 2. Contact Us Page
 Contact form for inquiries.
 Help Desk section for common queries.
+
 💻 Technologies Used
 The E Composer app is built using the following technologies:
 
-Frontend: React.js,Typescript, Material-UI
+Frontend: React.js, TypeScript, Material-UI
 State Management: Redux with Redux Toolkit
 Routing: React Router
 Styling: CSS-in-JS, Responsive Design principles
 Animation: AOS (Animate on Scroll)
+Progressive Web App (PWA): Added PWA functionality for offline usage and native-like experience.
 Version Control: Git, GitHub
+Deployment: Deployed on Vercel for fast and reliable hosting.
+
+Thank you for exploring E Composer! Enjoy using the app. 🚀
