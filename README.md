@@ -51,8 +51,7 @@ To run the E Composer app locally, follow these steps:
      git clone https://github.com/Anish-Rawat/E-Composer
 2. Navigate to the project directory:
 
-    bash
-    cd EComposer
+    bash cd EComposer
 
 3. Install dependencies:
 
